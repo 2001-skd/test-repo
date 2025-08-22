@@ -120,7 +120,7 @@
 
     /* Content Sections */
     .section {
-      background: white;
+      background: red;
       margin: 2rem 0;
       padding: 3rem 0;
       border-radius: 20px;
@@ -347,7 +347,19 @@
     <section id="home" class="hero">
       <div class="container">
         <h1>Welcome to Creative Studio</h1>
+        <h1>Welcome to Test Studio</h1>
         <p>We bring your digital dreams to life with stunning design and cutting-edge development</p>
+         <p>We bring your digital dreams to life with stunning design and cutting-edge development</p>
+        <a href="#services" class="cta-button">Explore Our Work</a>
+      </div>
+    </section>
+
+     <section id="home" class="hero">
+      <div class="container">
+        <h1>Welcome to Creative Studio</h1>
+        <h1>Welcome to Test Studio</h1>
+        <p>We bring your digital dreams to life with stunning design and cutting-edge development</p>
+         <p>We bring your digital dreams to life with stunning design and cutting-edge development</p>
         <a href="#services" class="cta-button">Explore Our Work</a>
       </div>
     </section>
@@ -360,6 +372,12 @@
             <h3>Web Design</h3>
             <p>Beautiful, responsive websites that captivate your audience and drive results. We create digital experiences that leave lasting impressions.</p>
           </div>
+
+          <div class="service-card">
+            <h3>Web Design</h3>
+            <p>Beautiful, responsive websites that captivate your audience and drive results. We create digital experiences that leave lasting impressions.</p>
+          </div>
+          
           <div class="service-card">
             <h3>Brand Identity</h3>
             <p>Comprehensive branding solutions that tell your story and connect with customers. From logos to complete visual systems.</p>
@@ -420,42 +438,13 @@
     <div class="container">
       <p>&copy; 2025 Creative Studio. All rights reserved.</p>
       <div class="social-links">
-        <a href="#">📧</a>
-        <a href="#">📱</a>
-        <a href="#">🌐</a>
+        <a href="#">email</a>
+        <a href="#">whatsapp</a>
+        <a href="#">test</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Simple smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Form submission handler
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! We\'ll get back to you soon.');
-      this.reset();
-    });
-
-    // Header background opacity on scroll
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      const scrolled = window.pageYOffset;
-      const opacity = Math.min(0.9, 0.1 + (scrolled / 500));
-      header.style.background = `rgba(255, 255, 255, ${opacity})`;
-    });
-  </script>
+  
 </body>
 </html>
